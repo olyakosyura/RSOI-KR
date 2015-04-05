@@ -17,11 +17,11 @@ INSERT INTO "data_login" VALUES(4,'Marina','1234567890');
 INSERT INTO "data_login" VALUES(5,'happy','1');
 
 CREATE TABLE data_login_firms (id integer primary key, login TEXT UNIQUE, password TEXT);
-INSERT INTO "data_login" VALUES(1,'euroset','qwerty');
-INSERT INTO "data_login" VALUES(2,'eldorado','0000');
-INSERT INTO "data_login" VALUES(3,'IphoneCustoms','qazxsw');
-INSERT INTO "data_login" VALUES(4,'Miranda','1234567890');
-INSERT INTO "data_login" VALUES(5,'ILoveYourPhones','1');
+INSERT INTO "data_login_firms" VALUES(1,'euroset','qwerty');
+INSERT INTO "data_login_firms" VALUES(2,'eldorado','0000');
+INSERT INTO "data_login_firms" VALUES(3,'IphoneCustoms','qazxsw');
+INSERT INTO "data_login_firms" VALUES(4,'Miranda','1234567890');
+INSERT INTO "data_login_firms" VALUES(5,'ILoveYourPhones','1');
 
 
 CREATE TABLE data_users (id INTEGER PRIMARY KEY, login TEXT UNIQUE, firstname TEXT, secondname TEXT, email TEXT);
@@ -33,11 +33,11 @@ INSERT INTO "data_users" VALUES(5,'happy','Ololosha','Ololo','olololo@mail.ru');
 
 
 CREATE TABLE data_users_firms (id INTEGER PRIMARY KEY, login TEXT UNIQUE, name TEXT,email TEXT);
-INSERT INTO "data_users" VALUES(1,'olyakosyura','EuroSet','olyakosyura@gmail.ru');
-INSERT INTO "data_users" VALUES(2,'barnybrown','Eldorado"','barnybrown@mail.ru');
-INSERT INTO "data_users" VALUES(3,'Nick','Iphone Customs','nik@yandex.ru');
-INSERT INTO "data_users" VALUES(4,'Marina','Miranda Productions','aeifrhen@mail.ru');
-INSERT INTO "data_users" VALUES(5,'happy','I love your phones','olololo@mail.ru');
+INSERT INTO "data_users_firms" VALUES(1,'olyakosyura','EuroSet','olyakosyura@gmail.ru');
+INSERT INTO "data_users_firms" VALUES(2,'barnybrown','Eldorado"','barnybrown@mail.ru');
+INSERT INTO "data_users_firms" VALUES(3,'Nick','Iphone Customs','nik@yandex.ru');
+INSERT INTO "data_users_firms" VALUES(4,'Marina','Miranda Productions','aeifrhen@mail.ru');
+INSERT INTO "data_users_firms" VALUES(5,'happy','I love your phones','olololo@mail.ru');
 
 
 CREATE TABLE data_mobiles (id INTEGER PRIMARY KEY, firm TEXT, model TEXT, color TEXT, description TEXT);
