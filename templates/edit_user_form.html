@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit profile</title>
+</head>
+<body>
+	<form action=/update_user method='POST'>
+        <p>First Name:<br><input type='text' name='first' value="{{user.firstname}}"></p>
+        <p>Second Name:<br><input type='text' name='second' value="{{user.secondname}}"></p>
+        <p>Email:<br><input type='text' name='email' value="{{user.email}}"></p>
+        
+        <input type='submit' value='Ok'>
+    </form>
+
+</body>
+</html>
